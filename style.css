@@ -74,7 +74,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
   border-radius: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .wrapper img {
   width: 100%;
@@ -83,7 +83,6 @@ body {
   object-fit: cover;
   object-position: center;
   transition: all 0.3s ease;
-  border: 1px solid #fff;
   margin-bottom: 40px;
 }
 .wrapper .input-box {
@@ -99,11 +98,11 @@ body {
   border: none;
   outline: none;
   background: transparent;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
 }
 
 input::placeholder {
-  color: #fff;
+  color: black;
 }
 .wrapper .input-box .bx {
   position: absolute;
@@ -131,6 +130,8 @@ input::placeholder {
   font-weight: 500;
   box-shadow: 0px 0px 5px black;
   margin-bottom: 10px;
+  background-color: black;
+  color: #fff;
 }
 input[value="Login"] {
   font-weight: 500;
