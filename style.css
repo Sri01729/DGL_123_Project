@@ -1,13 +1,18 @@
+/* Reset default margin, padding, and box model for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Apply box model to the HTML element */
 html {
   box-sizing: border-box;
 }
+
+/* Style the header section */
 header {
-  position: fixed;
+  position: fixed; /* Fixed position at the top of the page */
   top: 0;
   left: 0;
   width: 100%;
@@ -16,9 +21,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
+  z-index: 99; /* Stack the header on top */
 }
 
+/* Style the logo in the header */
 .logo {
   font-size: 2em;
   color: #f99c1a;
@@ -26,6 +32,7 @@ header {
   margin-left: -50px;
 }
 
+/* Style navigation links */
 .navigation a {
   position: relative;
   font-size: 1.1em;
@@ -35,6 +42,7 @@ header {
   margin-left: 40px;
 }
 
+/* Style the "Login" button in the navigation */
 .navigation .btnLogin-popup {
   border-radius: 7px;
   border-style: none;
@@ -51,12 +59,14 @@ header {
   margin-left: 40px;
 }
 
+/* Hover effect for the "Login" button */
 .navigation .btnLogin-popup:hover {
   background-color: black;
   color: white;
   transition: all 0.3s ease;
 }
 
+/* Apply styles to the body, including background image */
 body {
   display: flex;
   justify-content: center;
@@ -66,6 +76,8 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+/* Style a wrapper for content */
 .wrapper {
   width: 350px;
   height: auto;
@@ -79,6 +91,8 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+/* Style images within the wrapper */
 .wrapper img {
   width: 100%;
   height: 100%;
@@ -88,12 +102,16 @@ body {
   transition: all 0.3s ease;
   margin-bottom: 10px;
 }
+
+/* Style input boxes within the wrapper */
 .wrapper .input-box {
   display: flex;
   width: 100%;
   padding: 10px 12px;
   position: relative;
 }
+
+/* Style form inputs within the input box */
 .wrapper .input-box input {
   width: 100%;
   padding: 10px 12px;
@@ -104,25 +122,36 @@ body {
   border-bottom: 1px solid black;
 }
 
+/* Placeholder text color */
 input::placeholder {
   color: black;
 }
+
+/* Styling for elements with class "bx" within the input box */
 .wrapper .input-box .bx {
   position: absolute;
   right: 20px;
   top: 20px;
 }
+
+/* Styling for elements with class "remember" */
 .wrapper .remember {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
-.wrapper .remembera {
+
+/* Styling for elements with class "remembera" within the "remember" section */
+.wrapper .remember a {
   text-decoration: none;
 }
-.wrapper .remeber:hover a {
+
+/* Hover effect for links in the "remember" section */
+.wrapper .remember:hover a {
   text-decoration: underline;
 }
+
+/* Styling for the submit button */
 .btn {
   width: 100%;
   height: 40px;
@@ -136,14 +165,20 @@ input::placeholder {
   background-color: black;
   color: #fff;
 }
+
+/* Styling for the "Login" button */
 input[value="Login"] {
   font-weight: 500;
 }
+
+/* Styling for elements with class "register" */
 .wrapper .register {
   display: inline-flex;
   justify-content: space-around;
   margin-left: 15px;
 }
+
+/* Styling for paragraphs and links within the "register" section */
 .register p,
 a {
   text-decoration: none;
@@ -151,9 +186,13 @@ a {
   font-size: 16px;
   word-spacing: 1px;
 }
+
+/* Margin and hover effect for links in the "register" section */
 .register a {
   margin-left: 90px;
 }
+
+/* Hover effect for links in the "register" section */
 .register:hover a {
   text-decoration: underline;
 }
