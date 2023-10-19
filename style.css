@@ -196,3 +196,92 @@ a {
 .register:hover a {
   text-decoration: underline;
 }
+/* Styles for the "profile" sections */
+.profile,
+.progress {
+  background-color: #2c2b2b;
+  color: #f99c1a;
+}
+
+/* Styling for a container element */
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+/* Styling for headings in the "profile" section */
+.profile h1 {
+  text-align: center;
+  margin-top: 130px;
+}
+
+/* Styling for forms in the "progress" section */
+form {
+  margin-top: 100px;
+}
+
+/* Styling for form groups */
+.form-group {
+  margin-bottom: 100px;
+  margin-right: 300px;
+}
+
+/* Styling for labels in forms */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Styling for text and number input fields in forms */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for radio input labels */
+.radio-label {
+  font-weight: 900;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+/* Styling for radio input groups */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+/* Styling for radio input labels */
+.radio-group label {
+  margin-right: 10px;
+}
+
+/* Styling for radio input fields */
+input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 50px;
+}
+
+/* Styling for the submit button in forms */
+.submit-button {
+  background-color: #f99c1a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 650px;
+  margin-bottom: 30px;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: black;
+  color: #f99c1a;
+}
