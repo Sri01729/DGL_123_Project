@@ -285,3 +285,86 @@ input[type="radio"] {
   background-color: black;
   color: #f99c1a;
 }
+
+/* Styling for "progress tracking" page */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for grid layout */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/* Styling for cells in the grid */
+.cell {
+  text-align: center;
+  padding: 10px;
+}
+
+.cell1 {
+  text-align: center;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* Styling for date inputs and text inputs within the "flex-container" */
+.flex-container [type="date"],
+.flex-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for chart images */
+.chart img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 200px;
+}
+
+/* Styling for elements with class "totalmeas" */
+.totalmeas {
+  width: 10%;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+
+/* Styling for the "progress" heading */
+.progress h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 120px;
+}
+
+/* Styling for the footer */
+.footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Styling for social icons */
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+/* Styling for social icons */
+.social-icons a {
+  text-decoration: none;
+  color: #f99c1a;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
