@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">SAIKYO</h2>
+        <nav class="navigation">
+            <a href="profile.html">Home</a>
+            <a href="progresstracking.html">Progress Tracking</a>
+            <a href="nutritiontracking.html">Nutrition Tracking</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="index.html"><button class="btnLogin-popup">Login</button></a>
+        </nav>
+    </header>
