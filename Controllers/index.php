@@ -1,9 +1,9 @@
 <?php
 // Include the header
-include 'views/header.php';
+include '../views/header.view.php';
 
 // Load the main page content
-include 'views/index.php';
+include '../views/index.view.php';
 
 // Include the footer
-include 'views/footer.php';
+include '../views/footer.view.php';

@@ -1,9 +1,9 @@
 <?php
 // Include the header
-include 'views/header.view.php';
+include '../Views/header.view.php';
 
 // Load the progress tracking page content
-include 'views/progresstracking.view.php';
+include '../Views/progresstracking.view.php';
 
 // Include the footer
-include 'views/footer.view.php';
+include '../Views/footer.view.php';

@@ -1,9 +1,9 @@
 <?php
 // Include the header
-include 'views/header.php';
+include '../views/header.view.php';
 
 // Load the profile page content
-include 'views/profile.php';
+include '../views/profile.view.php';
 
 // Include the footer
-include 'views/footer.php';
+include '../views/footer.view.php';
