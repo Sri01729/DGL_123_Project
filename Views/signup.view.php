@@ -16,10 +16,10 @@
                 <input type="password" placeholder="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
-            <a href="profile.html"><input type="submit" class="btn" value="signup" style="margin-top: 15px;"></a>
+            <a href="../Controllers/profile.php" class="btn">Signup</a>
             <div class="register">
                 <p>Have an account ? </p>
-                <a href="../Controllers/profile.php">Login now</a>
+                <a href="../Controllers/index.php">Login now</a>
             </div>
         </form>
     </div>

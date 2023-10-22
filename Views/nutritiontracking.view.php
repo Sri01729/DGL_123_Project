@@ -86,7 +86,7 @@
             </div>
         </div>
         <div style="margin-top: 100px ;"></div>
-        <button class="submit-button" style="margin: 0px 0px 50px 650px; ">Submit</button>
+        <button class="submit-button" style="margin: 0px 0px 80px 650px; ">Submit</button>
     </main>
 
     <?php include 'footer.view.php'; ?>

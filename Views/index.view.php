@@ -16,7 +16,7 @@
                 <label><input type="checkbox">Remember Me</label>
                 <a href="#">Forget password?</a>
             </div>
-            <input type="submit" class="btn" value="Login">
+            <a href="../Controllers/progresstracking.php" class="btn">Login</a>
             <div class="register">
                 <p>Don't have an account ? </p>
                 <a href="../Controllers/signup.php"> Register</a>
