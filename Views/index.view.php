@@ -19,7 +19,7 @@
             <input type="submit" class="btn" value="Login">
             <div class="register">
                 <p>Don't have an account ? </p>
-                <a href="signup.php"> Register</a>
+                <a href="../Controllers/signup.php"> Register</a>
             </div>
         </form>
     </div>

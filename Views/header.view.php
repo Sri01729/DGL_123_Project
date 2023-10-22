@@ -19,6 +19,6 @@
             <a href="nutritiontracking.php">Nutrition Tracking</a>
             <a href="#">About us</a>
             <a href="#">Contact us</a>
-            <a href="signup.php"><button class="btnLogin-popup">Login</button></a>
+            <a href="index.php"><button class="btnLogin-popup">Login</button></a>
         </nav>
     </header>

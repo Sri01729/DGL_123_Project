@@ -19,7 +19,7 @@
             <a href="profile.html"><input type="submit" class="btn" value="signup" style="margin-top: 15px;"></a>
             <div class="register">
                 <p>Have an account ? </p>
-                <a href="profile.php">Login now</a>
+                <a href="../Controllers/profile.php">Login now</a>
             </div>
         </form>
     </div>
