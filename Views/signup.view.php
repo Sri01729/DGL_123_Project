@@ -3,7 +3,7 @@
 <main>
     <div class="wrapper">
         <form action="">
-            <img src="assets/images/SAIKYO.png">
+            <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="text" placeholder="Name" required>
                 <i class="bx bxs-user"></i>
@@ -19,7 +19,7 @@
             <a href="profile.html"><input type="submit" class="btn" value="signup" style="margin-top: 15px;"></a>
             <div class="register">
                 <p>Have an account ? </p>
-                <a href="index.html">Login now</a>
+                <a href="profile.php">Login now</a>
             </div>
         </form>
     </div>

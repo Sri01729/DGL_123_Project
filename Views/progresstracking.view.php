@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="chart">
-                    <img src="assets/images/bodymeasgraph.png">
+                    <img src="../assets/images/bodymeasgraph.png">
                 </div>
             </div>
         </div>

@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="macro-chart">
-                        <img src="assets/images/piechart.png">
+                        <img src="../assets/images/piechart.png">
                     </div>
                 </div>
             </div>
