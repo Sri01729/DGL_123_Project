@@ -1,4 +1,3 @@
-
 <footer class="footer" style="position: fixed; bottom:0; width:100%">
     <div class="social-icons">
         <a href="https://www.facebook.com" class="fa fa-facebook"></a>
@@ -6,6 +5,6 @@
         <a href="https://www.twitter.com" class="fa fa-twitter"></a>
     </div>
 </footer>
+<script src="../assets/main.js"></script>
 </body>
-
 </html>

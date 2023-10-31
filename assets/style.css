@@ -498,6 +498,7 @@ td {
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 5px;
+  word-wrap: break-word;
   width: 50%;
 }
 

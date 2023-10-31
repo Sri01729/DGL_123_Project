@@ -13,3 +13,12 @@ function sendMessage() {
         messageInput.value = '';
     }
 }
+
+// Event listeners
+const sendButton = document.getElementById('send-button');
+sendButton.addEventListener('click', sendMessage);
+messageInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        sendMessage();
+    }
+});
