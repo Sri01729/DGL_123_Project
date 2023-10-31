@@ -488,7 +488,7 @@ td {
   max-height: 300px;
   overflow-y: auto;
   padding: 10px;
-  border: 1px solid #eee;
+
   border-radius: 5px;
 }
 
@@ -498,4 +498,14 @@ td {
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 5px;
+  width: 50%;
+}
+
+/* Styling for  message input */
+#message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-top: 10px;
 }
