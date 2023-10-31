@@ -1,10 +1,3 @@
-<div class="chat">
-    <div class="chat-window">
-        <div class="message">Message </div>
-    </div>
-    <input type="text" id="message-input" placeholder="Type a message...">
-    <button id="send-button">Send</button>
-</div>
 
 <footer class="footer" style="position: fixed; bottom:0; width:100%">
     <div class="social-icons">

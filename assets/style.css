@@ -464,3 +464,16 @@ td {
   max-width: 50%;
   height: auto;
 }
+
+/* Styling for chat container */
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #f99c1a;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 20px;
+  background-color: #fff;
+}
