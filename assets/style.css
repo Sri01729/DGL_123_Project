@@ -476,4 +476,7 @@ td {
   padding: 10px;
   margin: 20px;
   background-color: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
