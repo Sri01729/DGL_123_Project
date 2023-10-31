@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 // Define variables
 const messageInput = document.getElementById('message-input');
 const chatWindow = document.querySelector('.chat-window');
@@ -22,3 +23,4 @@ messageInput.addEventListener('keydown', function (event) {
         sendMessage();
     }
 });
+ });
