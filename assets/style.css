@@ -509,3 +509,15 @@ td {
   border-radius: 5px;
   margin-top: 10px;
 }
+
+/* Styling for send button */
+#send-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f99c1a;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
