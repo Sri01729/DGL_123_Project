@@ -521,3 +521,8 @@ td {
   cursor: pointer;
   margin-top: 10px;
 }
+
+/* Styling for hover effect of send button */
+#send-button:hover {
+  background-color: #c37506;
+}
