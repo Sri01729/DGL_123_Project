@@ -2,6 +2,7 @@
     <div class="chat-window">
         <div class="message">Message </div>
     </div>
+    <input type="text" id="message-input" placeholder="Type a message...">
 </div>
 
 <footer class="footer" style="position: fixed; bottom:0; width:100%">
