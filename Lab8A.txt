@@ -7,3 +7,11 @@ Here are the chatGPT suggested ways and features after overviewing my project
     2. Achievements and Badges: Gamify the experience by awarding badges or achievements based on user activity or milestones.
 
     3. Chat or Messaging: Integrate a messaging system so users can communicate with agent or bot.
+
+    Reflection on the features:
+
+    1. Adding a profile picture is a good idea, but I haven't yet dealt with factors like file upload and storage, file size limits, and file type validation. As a result, I'll skip this for now.
+
+    2. Achievemenets and badges feature is a good one which can encourage user to reach their fitness goals. Will try to implement it.
+
+    3. Chat or Messaging is a nice feature to help the user providing solutins about their fitnes queries. It will be a good one to implememnt.
