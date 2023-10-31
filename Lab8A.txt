@@ -70,3 +70,5 @@ Public/
 Error Handling: Implement proper error handling and validation in your controllers and models.
 
 With these changes, your codebase will adhere more closely to the MVC pattern. Controllers will manage the application's flow, models will handle data, and views will render the HTML templates. The "Core" folder and "Routes" file help with shared functionality and routing, respectively. Additionally, you have a clear separation of public assets in the "Public" directory, which is a common practice for web projects.
+
+4. Chat messaging will be my candidate feature, i would like to add to the site.
