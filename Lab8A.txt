@@ -79,3 +79,7 @@ With these changes, your codebase will adhere more closely to the MVC pattern. C
     After building the JavaScript, i got struck because it's not responding and showing errors in console even though everything is correct.
     After careful observation i got the solution. it's causing errors due to the JavaScript code inside the callback function is executing even before the HTML document loaded.
     And then resolved it by adding eventListener.
+
+
+
+Self-accessed score: 3/4.
