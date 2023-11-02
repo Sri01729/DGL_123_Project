@@ -2,7 +2,7 @@
 
 <main>
     <div class="wrapper">
-        <form action="../Models/signupregistration.php" method="post">
+        <form action="../Models/signupregistration.php" method="POST">
             <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="text" placeholder="Name" name="name" required>
@@ -16,7 +16,7 @@
                 <input type="password" placeholder="password" name="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
-            <a href="../Controllers/index.php" class="btn">Signup</a>
+            <button type="submit" class="btn" value="Signup">Signup</button>
             <div class="register">
                 <p>Have an account ? </p>
                 <a href="../Controllers/index.php">Login now</a>
