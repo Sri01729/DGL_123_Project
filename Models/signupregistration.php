@@ -11,6 +11,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 }
 
+// Insert the user's data into the database
+$insertUser = $pdo->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)');
+$insertUser->execute(array(
+    ':name' => $name,
+    ':email' => $email,
+    ':password' => $password
+));
 
 
 ?>
