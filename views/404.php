@@ -1,4 +1,4 @@
-<?php require('header.view.php') ?>
+<?php require('../views/header.view.php') ?>
 
 <main>
     <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
@@ -6,4 +6,4 @@
        <a href="/" class="text-blue underline">Go back to Home page</a>
     </div>
 </main>
-<?php require('partials/footer.php') ?>
+<?php require('../views/footer.view.php') ?>

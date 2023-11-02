@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 // Define variables
-const messageInput = document.getElementById('message-input');
+const messageInput = document.getElementByIdocument.addEventListener('DOMContentLoaded', () => {d('message-input');
 const chatWindow = document.querySelector('.chat-window');
 
 // Function to send a message
