@@ -16,7 +16,7 @@
                 <input type="password" placeholder="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
-            <a href="../Controllers/profile.php" class="btn">Signup</a>
+            <a href="../Controllers/index.php" class="btn">Signup</a>
             <div class="register">
                 <p>Have an account ? </p>
                 <a href="../Controllers/index.php">Login now</a>
