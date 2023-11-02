@@ -19,5 +19,7 @@ $insertUser->execute(array(
     ':password' => $password
 ));
 
-
+// Redirect to the profile page after successful signup
+header('Location: ../Controllers/index.php');
+exit();
 ?>
