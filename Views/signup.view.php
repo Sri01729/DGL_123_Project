@@ -2,18 +2,18 @@
 
 <main>
     <div class="wrapper">
-        <form action="">
+        <form action="../Models/signupregistration.php" method="post">
             <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
-                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Name" name="name" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="email" placeholder="Email" required>
+                <input type="email" placeholder="Email" name="email" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="password" required>
+                <input type="password" placeholder="password" name="password" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <a href="../Controllers/index.php" class="btn">Signup</a>
