@@ -2,7 +2,7 @@
 
 <main>
     <div class="wrapper">
-        <form action="">
+        <form action="../Models/loginauthentication.php" method="POST">
             <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="text" placeholder="username" required>
