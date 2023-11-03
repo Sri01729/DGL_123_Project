@@ -10,7 +10,7 @@ $password = 'Cnupavanphp1729@';      // Enter YOUR password here
 
 $dsn = "$type:host=$server;dbname=$db;port=$port;charset=$charset";
 try {
-    $pdo = new PDO($dsn, $username, $password, $options);
+    $pdo = new PDO($dsn, $username, $password);
 } catch (PDOException $e) {
     echo "An exception occurred: " . $e->getMessage();
 }
