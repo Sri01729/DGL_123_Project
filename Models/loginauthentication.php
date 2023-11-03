@@ -7,16 +7,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Authenticate the user against the database
     $query = $pdo->prepare("SELECT * FROM loginform WHERE username = ?");
-    $query->execute([$username]);
-    $login = $query->fetch();
+    $query ->bindParam(1,$username);
+    $query -> execute();
+    $query_result = $query->fetch(PDO::FETCH_ASSOC);
+
+    if($query_result){
+        if($query_result['password']===$password){
+            echo "Login sucessfully";
+        } else{
+            echo "Invalid username or passsword";
+        }
+    }
 
 
-if($login && password_verify($password, $login['password'])){
-
-    header('Location: ../Controllers/profile.php');
-
-}else
-{
-    echo "Username or Password is invald";
-}
 }
