@@ -11,7 +11,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // set the user's email in a session variable
     $_SESSION['user_email'] = $email;
 
-
     // Authenticate the user against the database
     $query = $pdo->prepare("SELECT * FROM users WHERE email = ?");
     $query ->bindParam(1,$email);
@@ -24,6 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if($query_result){
     // Compare the submitted password with the stored password
         if($query_result['password']===$password){
+
+            // Set the user's email in a session variable
+            $_SESSION['user_email'] = $email;
+
+            // Insert the email into the profile table
+            $insertQuery = $pdo->prepare("INSERT INTO profile (email) VALUES (?)");
+            $insertQuery->execute([$email]);
 
             header('Location: ../Controllers/profile.php');
             exit();
