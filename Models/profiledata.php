@@ -10,6 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $bodyfat = $_POST['bodyfat'];
 }
 
+// Retrieve the user's email from the session
+$userEmail = $_SESSION['user_email'];
+
 //Update name in profile table based on the email in users table using subquery
 $queryNameUpdate = $pdo->prepare("UPDATE profile
         SET name = (SELECT name FROM users WHERE email = :email)
