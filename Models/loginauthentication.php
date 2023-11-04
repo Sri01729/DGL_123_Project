@@ -2,18 +2,18 @@
 require '../Core/databaseconnection.php'; // Include the database connection code
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = $_POST['password'];
 
     // Authenticate the user against the database
-    $query = $pdo->prepare("SELECT * FROM loginform WHERE username = ?");
-    $query ->bindParam(1,$username);
+    $query = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+    $query ->bindParam(1,$email);
     $query -> execute();
 
     // Fetch the result as an associative array
     $query_result = $query->fetch(PDO::FETCH_ASSOC);
 
-    // Check if a user with the given username exists
+    // Check if a user with the given email exists
     if($query_result){
     // Compare the submitted password with the stored password
         if($query_result['password']===$password){
@@ -22,10 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
 
         } else{
-            echo "Invalid username or passsword";
+            echo "Invalid email or passsword";
         }
     }else{
-        echo "Invalid username or passsword";
+        echo "Invalid email or passsword";
     }
 
 

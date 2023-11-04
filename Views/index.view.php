@@ -5,7 +5,7 @@
         <form action="../Models/loginauthentication.php" method="POST">
             <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
-                <input type="text" placeholder="username" name="username" required>
+                <input type="email" placeholder="email" name="email" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
