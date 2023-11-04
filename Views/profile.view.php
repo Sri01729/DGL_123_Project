@@ -3,7 +3,7 @@
 <div class="profile">
     <main>
         <h1>Set up profile</h1>
-        <form>
+        <form action="../Models/profiledata.php" method="post">
             <div class="form-group">
                 <label class="radio-label">Gender:</label>
                 <div class="radio-group">
@@ -37,7 +37,7 @@
                     <input type="number" name="bmi">
                 </div>
             </div>
-            <button type="submit" class="submit-button">SUBMIT</button>
+            <button type="submit" name="profile" value="profileCreate" class="submit-button">SUBMIT</button>
         </form>
     </main>
 
