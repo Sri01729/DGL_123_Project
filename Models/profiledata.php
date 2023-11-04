@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $height = $_POST['height'];
     $weight = $_POST['weight'];
     $age = $_POST['age'];
-    $bodyfat = $_POST['bodyfat'];
+    $bodyFat = $_POST['bodyfat'];
 }
 
 // Retrieve the user's email from the session
@@ -23,3 +23,11 @@ $queryNameUpdate = $pdo->prepare("UPDATE profile
 $query = $pdo->prepare("UPDATE profile
         SET gender = :gender, height = :height, weight = :weight, age = :age, body_fat_percent = :body_fat_percent,
         WHERE email = :email");
+
+// Bind the values for the profile update
+$query->bindParam(':gender', $gender);
+$query->bindParam(':height', $height);
+$query->bindParam(':weight', $weight);
+$query->bindParam(':age', $age);
+$query->bindParam(':body_fat_percent', $bodyFat);
+$query->bindParam(':email', $userEmail);
