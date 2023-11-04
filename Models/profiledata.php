@@ -31,3 +31,9 @@ $query->bindParam(':weight', $weight);
 $query->bindParam(':age', $age);
 $query->bindParam(':body_fat_percent', $bodyFat);
 $query->bindParam(':email', $userEmail);
+
+// Execute the profile update query
+$profileUpdated = $query->execute();
+
+// Bind the email parameter for the name update
+$queryNameUpdate->bindParam(':email', $userEmail);
