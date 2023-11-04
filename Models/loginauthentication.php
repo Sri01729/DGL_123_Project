@@ -1,9 +1,16 @@
 <?php
+// Start a session
+session_start();
+
 require '../Core/databaseconnection.php'; // Include the database connection code
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
+
+    // set the user's email in a session variable
+    $_SESSION['user_email'] = $email;
+
 
     // Authenticate the user against the database
     $query = $pdo->prepare("SELECT * FROM users WHERE email = ?");
