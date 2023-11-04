@@ -17,7 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if($query_result){
     // Compare the submitted password with the stored password
         if($query_result['password']===$password){
-            echo "Login sucessfully";
+
+            header('Location: ../Controllers/profile.php');
+            exit();
+
         } else{
             echo "Invalid username or passsword";
         }
