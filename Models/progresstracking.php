@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $leftThigh  = $_POST['leftThigh'];
     $rightBicep  = $_POST['rightBicep'];
     $leftBicep  = $_POST['leftBicep'];
-}
 
+}
 
 // Retrieve the user's email from the session
 if (isset($_SESSION['user_email'])) {
@@ -43,15 +43,16 @@ if (isset($_SESSION['user_email'])) {
 
     // Bind the values for the profile update
     $query->bindParam(':date', $date);
-    $query->bindParam(':', $shoulders);
-    $query->bindParam(':', $neck);
-    $query->bindParam(':', $forearms);
-    $query->bindParam(':', $bust);
-    $query->bindParam(':', $chest);
-    $query->bindParam(':', $rightThigh);
-    $query->bindParam(':', $leftThigh);
-    $query->bindParam(':', $rightBicep);
-    $query->bindParam(':', $leftBicep);
+    $query->bindParam(':shoulders', $shoulders);
+    $query->bindParam(':neck', $neck);
+    $query->bindParam(':forearms', $forearms);
+    $query->bindParam(':bust', $bust);
+    $query->bindParam(':chest', $chest);
+    $query->bindParam(':rightThigh', $rightThigh);
+    $query->bindParam(':leftThigh', $leftThigh);
+    $query->bindParam(':rightBicep', $rightBicep);
+    $query->bindParam(':leftBicep', $leftBicep);
+    $query->bindParam(':email', $userEmail);
 
     //Execute the profile update query
     $progressTrackingUpdated = $query->execute();

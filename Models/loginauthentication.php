@@ -27,7 +27,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Set the user's email in a session variable
             $_SESSION['user_email'] = $email;
 
+            // Check if the email already exists in the users table
+            $checkQuery = $pdo->prepare("SELECT email FROM profile WHERE email = ?");
+            $checkQuery->execute([$email]);
 
+            // Fetch the result
+            $existingEmail = $checkQuery->fetchColumn();
+            if($existingEmail){
+                header('Location: ../Controllers/profile.php');
+                exit();
+            }else{
             // Insert the email into the profile table
             $insertQueryProfile = $pdo->prepare("INSERT INTO profile (email) VALUES (?)");
             $insertQueryProfile->execute([$email]);
@@ -38,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             header('Location: ../Controllers/profile.php');
             exit();
-
+            }
         } else{
             echo "Invalid email or passsword";
         }
