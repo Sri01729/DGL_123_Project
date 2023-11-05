@@ -50,7 +50,8 @@ $profileUpdated = $query->execute();
 
 if ($profileUpdated ) {
     echo "Profile updated successfully!";
-
+    echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
+    echo '<script>redirectToPage("../views/progresstracking.view.php", 3000);</script>';
 } else {
     echo "Error updating profile or name.";
 }

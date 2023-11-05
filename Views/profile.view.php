@@ -40,5 +40,6 @@
             <button type="submit" name="profile" value="profileCreate" class="submit-button">SUBMIT</button>
         </form>
     </main>
+    <script src="redirect.js"></script>
 
     <?php include 'footer.view.php'; ?>
