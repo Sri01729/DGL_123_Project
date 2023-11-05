@@ -27,9 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Set the user's email in a session variable
             $_SESSION['user_email'] = $email;
 
+
             // Insert the email into the profile table
-            $insertQuery = $pdo->prepare("INSERT INTO profile (email) VALUES (?)");
-            $insertQuery->execute([$email]);
+            $insertQueryProfile = $pdo->prepare("INSERT INTO profile (email) VALUES (?)");
+            $insertQueryProfile->execute([$email]);
+
+            // Insert the email into the progress tracking table
+            $insertQueryProgress = $pdo->prepare("INSERT INTO progresstracking (email) VALUES (?)");
+            $insertQueryProgress->execute([$email]);
 
             header('Location: ../Controllers/profile.php');
             exit();

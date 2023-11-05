@@ -9,8 +9,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-}
 
+
+// Check if the email already exists in the users table
+$checkQuery = $pdo->prepare("SELECT email FROM users WHERE email = ?");
+$checkQuery->execute([$email]);
+
+// Fetch the result
+$existingEmail = $checkQuery->fetchColumn();
+
+if ($existingEmail) {
+
+    echo " email already exists please choose a different email";
+} else {
 // Insert the user's data into the database
 $insertUser = $pdo->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)');
 $insertUser->execute(array(
@@ -22,4 +33,6 @@ $insertUser->execute(array(
 // Redirect to the profile page after successful signup
 header('Location: ../Controllers/index.php');
 exit();
+}
+}
 ?>
