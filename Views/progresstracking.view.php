@@ -14,31 +14,31 @@
                         <input type="date">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Shoulders">
+                        <input type="text" placeholder="Shoulders" name="shoulders">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Neck">
+                        <input type="text" placeholder="Neck" name="neck">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Forearms">
+                        <input type="text" placeholder="Forearms" name="forearms">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Bust">
+                        <input type="text" placeholder="Bust" name="bust">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Chest">
+                        <input type="text" placeholder="Chest" name="chest">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Right Thigh">
+                        <input type="text" placeholder="Right Thigh" name="rightThigh">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Left Thigh">
+                        <input type="text" placeholder="Left Thigh" name="leftThigh">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Right Bicep">
+                        <input type="text" placeholder="Right Bicep" name="rightBicep">
                     </div>
                     <div class="cell">
-                        <input type="text" placeholder="Left Bicep">
+                        <input type="text" placeholder="Left Bicep" name="leftBicep">
                     </div>
                 </div>
                 <div class="chart">
