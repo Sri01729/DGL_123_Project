@@ -41,6 +41,15 @@
                         <div class="cell">
                             <input type="text" placeholder="Left Bicep" name="leftBicep">
                         </div>
+                        <div class="cell2">
+                            <p>Total Measurements (in cms)</p>
+                        </div>
+                        <div class="cell">
+                            <input class="totalmeassub" type="text">
+                        </div>
+                        <div class="cell3">
+                            <button class="submit-button">Submit</button>
+                        </div>
                 </form>
             </div>
             <div class="chart">
@@ -48,11 +57,6 @@
             </div>
         </div>
 </div>
-<div class="totalmeas">
-    <span>Total Measurements</span>
-    <input class="totalmeassub" type="text">
-</div>
-<button class="submit-button">Submit</button>
 </main>
 
 <?php include 'footer.view.php'; ?>
