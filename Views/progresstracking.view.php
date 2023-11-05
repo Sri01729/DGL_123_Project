@@ -12,7 +12,7 @@
                             <p>Body Measurements (in cms)</p>
                         </div>
                         <div class="cell">
-                            <input type="date">
+                            <input type="date" id="date" name="date">
                         </div>
                         <div class="cell">
                             <input type="text" placeholder="Shoulders" name="shoulders">
