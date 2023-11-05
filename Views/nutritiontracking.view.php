@@ -23,8 +23,16 @@
                         <td>
                             <label for="food1">Food:</label>
                             <select id="food1">
-                                <option value="food1_option1">Food Option 1</option>
-                                <option value="food1_option2">Food Option 2</option>
+                                <option value="">Select the food item</option>
+                                <?php
+                                // Include the PHP file to access the $food array
+                                include '../Models/nutritiondata.php';
+
+                                // Loop through $food and populate the dropdown
+                                foreach ($food as $foodItem) {
+                                    echo '<option value="' . $foodItem['id'] . '">' . $foodItem['food_name'] . '</option>';
+                                }
+                                ?>
                             </select>
                         </td>
                         <td>
@@ -36,8 +44,16 @@
                         <td>
                             <label for="food2">Food:</label>
                             <select id="food2">
-                                <option value="food2_option1">Food Option 1</option>
-                                <option value="food2_option2">Food Option 2</option>
+                                <option value="">Select the food item</option>
+                                <?php
+                                // Include the PHP file to access the $food array
+                                include '../Models/nutritiondata.php';
+
+                                // Loop through $food and populate the dropdown
+                                foreach ($food as $foodItem) {
+                                    echo '<option value="' . $foodItem['id'] . '">' . $foodItem['food_name'] . '</option>';
+                                }
+                                ?>
                             </select>
                         </td>
                         <td>
@@ -49,8 +65,16 @@
                         <td>
                             <label for="food3">Food:</label>
                             <select id="food3">
-                                <option value="food3_option1">Food Option 1</option>
-                                <option value="food3_option2">Food Option 2</option>
+                                <option value="">Select the food item</option>
+                                <?php
+                                // Include the PHP file to access the $food array
+                                include '../Models/nutritiondata.php';
+
+                                // Loop through $food and populate the dropdown
+                                foreach ($food as $foodItem) {
+                                    echo '<option value="' . $foodItem['id'] . '">' . $foodItem['food_name'] . '</option>';
+                                }
+                                ?>
                             </select>
                         </td>
                         <td>
