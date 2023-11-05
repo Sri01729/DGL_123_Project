@@ -57,10 +57,11 @@ if (isset($_SESSION['user_email'])) {
     //Execute the profile update query
     $progressTrackingUpdated = $query->execute();
 
-
-
     if ($progressTrackingUpdated) {
-        echo "Your progress have been saved";
+        echo "<b>Your progress have been saved</b>";
+        echo "<br><br>Please wait for few seconds to redirect you to next page.";
+        echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
+        echo '<script>redirectToPage("../views/nutritiontracking.view.php", 3000);</script>';
     } else {
         echo "Error updating progress or name.";
     }

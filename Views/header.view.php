@@ -14,9 +14,9 @@
     <header>
         <h2 class="logo">SAIKYO</h2>
         <nav class="navigation">
-            <a href="profile.php">Home</a>
-            <a href="progresstracking.php">Progress Tracking</a>
-            <a href="nutritiontracking.php">Nutrition Tracking</a>
+            <a href="../Controllers/profile.php">Home</a>
+            <a href="../Controllers/progresstracking.php">Progress Tracking</a>
+            <a href="../Controllers/nutritiontracking.php">Nutrition Tracking</a>
             <a href="#">About us</a>
             <a href="#">Contact us</a>
             <a href="index.php"><button class="btnLogin-popup">Login</button></a>

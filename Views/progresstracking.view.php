@@ -12,34 +12,34 @@
                             <p>Body Measurements (in cms)</p>
                         </div>
                         <div class="cell">
-                            <input type="date" id="date" name="date">
+                            <input type="date" id="date" name="date" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Shoulders" name="shoulders">
+                            <input type="text" placeholder="Shoulders" name="shoulders" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Neck" name="neck">
+                            <input type="text" placeholder="Neck" name="neck" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Forearms" name="forearms">
+                            <input type="text" placeholder="Forearms" name="forearms" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Bust" name="bust">
+                            <input type="text" placeholder="Bust" name="bust" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Chest" name="chest">
+                            <input type="text" placeholder="Chest" name="chest" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Right Thigh" name="rightThigh">
+                            <input type="text" placeholder="Right Thigh" name="rightThigh" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Left Thigh" name="leftThigh">
+                            <input type="text" placeholder="Left Thigh" name="leftThigh" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Right Bicep" name="rightBicep">
+                            <input type="text" placeholder="Right Bicep" name="rightBicep" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Left Bicep" name="leftBicep">
+                            <input type="text" placeholder="Left Bicep" name="leftBicep" required>
                         </div>
                         <div class="cell2">
                             <p>Total Measurements (in cms)</p>

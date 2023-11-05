@@ -49,7 +49,8 @@ $profileUpdated = $query->execute();
 
 
 if ($profileUpdated ) {
-    echo "Profile updated successfully!";
+    echo "<b>Profile updated successfully!</b>";
+    echo "<br><br>Please wait for few seconds to redirect you to next page.";
     echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
     echo '<script>redirectToPage("../views/progresstracking.view.php", 3000);</script>';
 } else {
