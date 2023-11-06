@@ -10,6 +10,18 @@
             // Get the height and weight values from the input fields
             var height = parseFloat(heightInput.value);
             var weight = parseFloat(weightInput.value);
+
+            // Check if height and weight are valid numbers
+            if (!isNaN(height) && !isNaN(weight)) {
+                // Calculate BMI (BMI = weight / (height * height))
+                var bmi = weight / ((height / 100) * (height / 100));
+
+                // Update the BMI result input field with the calculated value
+                bmiResultInput.value = bmi.toFixed(2);
+            } else {
+                // Handle invalid input
+                alert('Please enter valid height and weight values.');
+            }
         });
     });
 
