@@ -14,5 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var rightBicep = parseFloat(document.getElementById("rightBicep").value) || 0;
     var leftBicep = parseFloat(document.getElementById("leftBicep").value) || 0;
 
+    var totalMeasurements = shoulders + neck + forearms + bust + chest + rightThigh + leftThigh + rightBicep + leftBicep;
+
+        document.getElementById("totalMeas").value = totalMeasurements.toFixed(2);
+
     });
  });
