@@ -15,7 +15,7 @@
                             <input type="date" id="date" name="date" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Shoulders" id="shoulders " name="shoulders" required>
+                            <input type="text" placeholder="Shoulders" id="shoulders" name="shoulders" required>
                         </div>
                         <div class="cell">
                             <input type="text" placeholder="Neck" name="neck" id="neck" required>
@@ -42,12 +42,6 @@
                             <input type="text" placeholder="Left Bicep" name="leftBicep" id="leftBicep" required>
                         </div>
                         <div class="cell2">
-                            <button id="totalButton" class="bmibutton">Total Measurements (in cms)</button>
-                        </div>
-                        <div class="cell">
-                            <input class="totalmeassub" type="text" id="totalMeas" name="totalMeasurements">
-                        </div>
-                        <div class="cell3">
                             <button type="submit" class="submit-button">Submit</button>
                         </div>
                 </form>
@@ -56,6 +50,10 @@
                 <img src="../assets/images/bodymeasgraph.png">
             </div>
         </div>
+</div>
+<div class="totalmeas">
+    <button id="totalButton" class="bmibutton">Total Measurements (in cms)</button>
+    <input class="totalmeassub" type="text" id="totalMeas" name="totalMeasurements">
 </div>
 </main>
 
