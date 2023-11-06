@@ -33,7 +33,7 @@
                     <input type="number" name="bodyfat">
                 </div>
                 <div class="form-group" id = "bmiButton">
-                    <button type="button" id="calculateBMI" class="bmibutton" ">Calculate BMI</button>
+                    <button type="button" id="calculateBMI" class="bmibutton">Calculate BMI</button>
                     <input type="number" name="bmi" id="bmiResult" readonly>
                 </div>
             </div>
