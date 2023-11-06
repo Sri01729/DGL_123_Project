@@ -36,7 +36,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="quantity1">Quantity:</label>
+                            <label for="quantity1">Quantity(In gms):</label>
                             <input type="number" id="quantity1" placeholder="0">
                         </td>
                     </tr>
@@ -57,7 +57,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="quantity2">Quantity:</label>
+                            <label for="quantity2">Quantity(In gms):</label>
                             <input type="number" id="quantity2" placeholder="0">
                         </td>
                     </tr>
@@ -78,7 +78,7 @@
                             </select>
                         </td>
                         <td>
-                            <label for="quantity3">Quantity:</label>
+                            <label for="quantity3">Quantity(In gms):</label>
                             <input type="number" id="quantity3" placeholder="0">
                         </td>
                     </tr>
@@ -110,7 +110,7 @@
             </div>
         </div>
         <div style="margin-top: 100px ;"></div>
-        <button class="submit-button" style="margin: 0px 0px 80px 650px; ">Submit</button>
+        <button class="submit-button" onclick="calculateMacroNutrition()" style=" margin: 0px 0px 80px 650px; ">Submit</button>
     </main>
 
     <?php include 'footer.view.php'; ?>
