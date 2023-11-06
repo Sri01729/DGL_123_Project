@@ -207,6 +207,12 @@ a {
   width: 100%;
 }
 
+/* Styling for a BMI button */
+.bmibutton {
+  padding: 5px 5px 5px 5px;
+  background-color: #f99c1a;
+  border-radius: 10px;
+}
 /* Styling for a container element */
 .container {
   display: flex;

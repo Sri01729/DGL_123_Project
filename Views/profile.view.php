@@ -32,9 +32,9 @@
                     <label>Body Fat Percentage:</label>
                     <input type="number" name="bodyfat">
                 </div>
-                <div class="form-group">
-                    <label>BMI:</label>
-                    <input type="number" name="bmi">
+                <div class="form-group" id = "bmiButton">
+                    <button type="button" id="calculateBMI" class="bmibutton" ">Calculate BMI</button>
+                    <input type="number" name="bmi" id="bmiResult" readonly>
                 </div>
             </div>
             <button type="submit" name="profile" value="profileCreate" class="submit-button">SUBMIT</button>

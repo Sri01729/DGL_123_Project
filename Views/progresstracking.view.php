@@ -15,40 +15,40 @@
                             <input type="date" id="date" name="date" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Shoulders" name="shoulders" required>
+                            <input type="text" placeholder="Shoulders" id="shoulders " name="shoulders" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Neck" name="neck" required>
+                            <input type="text" placeholder="Neck" name="neck" id="neck" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Forearms" name="forearms" required>
+                            <input type="text" placeholder="Forearms" name="forearms" id="forearms" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Bust" name="bust" required>
+                            <input type="text" placeholder="Bust" name="bust" id="bust" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Chest" name="chest" required>
+                            <input type="text" placeholder="Chest" name="chest" id="chest" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Right Thigh" name="rightThigh" required>
+                            <input type="text" placeholder="Right Thigh" name="rightThigh" id="rightThigh" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Left Thigh" name="leftThigh" required>
+                            <input type="text" placeholder="Left Thigh" name="leftThigh" id="leftThigh" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Right Bicep" name="rightBicep" required>
+                            <input type="text" placeholder="Right Bicep" name="rightBicep" id="rightBicep" required>
                         </div>
                         <div class="cell">
-                            <input type="text" placeholder="Left Bicep" name="leftBicep" required>
+                            <input type="text" placeholder="Left Bicep" name="leftBicep" id="leftBicep" required>
                         </div>
                         <div class="cell2">
-                            <p>Total Measurements (in cms)</p>
+                            <button onclick="total()" class="btn" style="background-color: #f99c1a;">Total Measurements (in cms)</button>
                         </div>
                         <div class="cell">
-                            <input class="totalmeassub" type="text">
+                            <input class="totalmeassub" type="text" id="totalMeas" name="totalMeasurements">
                         </div>
                         <div class="cell3">
-                            <button class="submit-button">Submit</button>
+                            <button type="submit" class="submit-button">Submit</button>
                         </div>
                 </form>
             </div>
