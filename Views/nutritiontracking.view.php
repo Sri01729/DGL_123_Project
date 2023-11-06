@@ -87,15 +87,15 @@
                     <h2>Macro Nutrients</h2>
                     <div class="macro-inputs">
                         <div class="macro-row">
-                            <label for="protein">Protein:</label>
+                            <label for="protein">Protein(per 100gms):</label>
                             <input type="text" id="protein">
                         </div>
                         <div class="macro-row">
-                            <label for="fats">Fats:</label>
+                            <label for="fats">Fats(per 100gms):</label>
                             <input type="text" id="fat">
                         </div>
                         <div class="macro-row">
-                            <label for="carbs">Carbs:</label>
+                            <label for="carbs">Carbs(per 100gms):</label>
                             <input type="text" id="carbs">
                         </div>
                         <div class="macro-row">
