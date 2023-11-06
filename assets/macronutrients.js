@@ -1,11 +1,12 @@
 
 function calculateMacroNutrition() {
+    console.log("enter the function");
 
     var quantity_1 = document.getElementById("quantity1").value;
     var quantity_2 = document.getElementById("quantity2").value;
     var quantity_3 = document.getElementById("quantity3").value;
 
-
+    console.log(quantity_1);
     // Get the select element
     var dropdown1 = document.getElementById("food1");
     var dropdown2 = document.getElementById("food2");
@@ -17,10 +18,10 @@ function calculateMacroNutrition() {
     var selectedOption3 = dropdown3.options[dropdown3.selectedIndex];
 
     // Get the value of the selected option
-    var selectedValue1 = selectedOption1.value;
-    var selectedValue2 = selectedOption2.value;
-    var selectedValue3 = selectedOption3.value;
-
+    var selectedValue1 = selectedOption1.textContent;
+    var selectedValue2 = selectedOption2.textContent;
+    var selectedValue3 = selectedOption3.textContent;
+    console.log(selectedValue1);
     // Define an array to food groups and their corresponding types
     var foodGroups = {
         dairy: ["Panner", "Ice cream"],
@@ -29,35 +30,14 @@ function calculateMacroNutrition() {
         snacks: ["Chocolate"]
     };
 
-    var protein;
-    var fat;
-    var carbs;
-    var calories;
-    // Check if the selected value belongs to a specific group
-    for (var group in foodGroups) {
-        if (foodGroups[group].includes(selectedValue1)) {
-
-            // calculate the macro nutrients
-            if (group === "dairy") {
-
-                protein = (20 / 100) * quantity_1;
-                fat = (10 / 100) * quantity_2;
-                carbs = (50 / 100) * quantity_3;
-                calories = (protein * 4) + (carbs * 4) + (fat * 9);
-
-
-
+    // Function to calculate macro nutrients for a specific food and quantity
+    function calculateMacroNutrients(food, quantity) {
+        var group;
+        for (var g in foodGroups) {
+            if (foodGroups[g].includes(food)) {
+                group = g;
                 break;
-            }else if(group === "veg") {
-
-
-        }else if(group === "non_veg") {
-
-            } else {
-
-        }
+            }
         }
     }
-
-
 }

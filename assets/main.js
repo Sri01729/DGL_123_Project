@@ -1,4 +1,3 @@
-
 // Define variables
 const messageInput = document.getElementByIdocument.addEventListener('DOMContentLoaded', () => {d('message-input');
 const chatWindow = document.querySelector('.chat-window');

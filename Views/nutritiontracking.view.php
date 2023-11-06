@@ -92,7 +92,7 @@
                         </div>
                         <div class="macro-row">
                             <label for="fats">Fats:</label>
-                            <input type="text" id="fats">
+                            <input type="text" id="fat">
                         </div>
                         <div class="macro-row">
                             <label for="carbs">Carbs:</label>
