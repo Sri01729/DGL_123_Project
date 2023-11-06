@@ -42,7 +42,7 @@
                             <input type="text" placeholder="Left Bicep" name="leftBicep" id="leftBicep" required>
                         </div>
                         <div class="cell2">
-                            <button onclick="total()" class="btn" style="background-color: #f99c1a;">Total Measurements (in cms)</button>
+                            <button id="totalButton" class="bmibutton">Total Measurements (in cms)</button>
                         </div>
                         <div class="cell">
                             <input class="totalmeassub" type="text" id="totalMeas" name="totalMeasurements">

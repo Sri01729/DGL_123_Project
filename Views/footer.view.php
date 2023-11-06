@@ -6,7 +6,7 @@
     </div>
 </footer>
 <script src="../assets/main.js"></script>
-<script src="../assets/requirefunctions.js"></script>
+<script src="../assets/bmi.js"></script>
 <script src="../assets/macronutrients.js"></script>
 </body>
 
