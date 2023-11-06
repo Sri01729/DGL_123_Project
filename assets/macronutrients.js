@@ -39,5 +39,30 @@ function calculateMacroNutrition() {
                 break;
             }
         }
+
+        var protein, fat, carbs, calories;
+
+        switch (group) {
+            case "dairy":
+                protein = (20 / 100) * quantity;
+                fat = (40 / 100) * quantity;
+                carbs = (9 / 100) * quantity;
+                break;
+            case "veg":
+                protein = (13 / 100) * quantity;
+                fat = (5 / 100) * quantity;
+                carbs = (60 / 100) * quantity;
+                break;
+            case "non_veg":
+                protein = (40 / 100) * quantity;
+                fat = (15 / 100) * quantity;
+                carbs = (5 / 100) * quantity;
+                break;
+            case "snacks":
+                protein = (3 / 100) * quantity;
+                fat = (80 / 100) * quantity;
+                carbs = (10 / 100) * quantity;
+                break;
+        }
     }
 }
