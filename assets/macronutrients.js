@@ -64,5 +64,15 @@ function calculateMacroNutrition() {
                 carbs = (10 / 100) * quantity;
                 break;
         }
+
+
+        calories = (protein * 4) + (carbs * 4) + (fat * 9);
+
+        return {
+            protein: protein,
+            fat: fat,
+            carbs: carbs,
+            calories: calories,
+        };
     }
 }
