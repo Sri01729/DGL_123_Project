@@ -75,4 +75,10 @@ function calculateMacroNutrition() {
             calories: calories,
         };
     }
+
+    // Calculate macro nutrients for each selected food and quantity
+        var result1 = calculateMacroNutrients(selectedValue1, quantity_1);
+        var result2 = calculateMacroNutrients(selectedValue2, quantity_2);
+        var result3 = calculateMacroNutrients(selectedValue3, quantity_3);
+
 }
