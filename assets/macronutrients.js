@@ -81,4 +81,10 @@ function calculateMacroNutrition() {
         var result2 = calculateMacroNutrients(selectedValue2, quantity_2);
         var result3 = calculateMacroNutrients(selectedValue3, quantity_3);
 
+    // Set the calculated values in the corresponding input fields
+        document.getElementById("protein").value = parseFloat(result1.protein.toFixed(2))+parseFloat(result2.protein.toFixed(2))+parseFloat(result3.protein.toFixed(2));
+        document.getElementById("fat").value = parseFloat(result1.fat.toFixed(2))+parseFloat(result2.fat.toFixed(2))+parseFloat(result3.fat.toFixed(2));
+        document.getElementById("carbs").value = parseFloat(result1.carbs.toFixed(2))+parseFloat(result2.carbs.toFixed(2))+parseFloat(result3.carbs.toFixed(2));
+        document.getElementById("calories").value = parseFloat(result1.calories.toFixed(2))+parseFloat(result2.calories.toFixed(2))+parseFloat(result3.calories.toFixed(2));
+
 }
