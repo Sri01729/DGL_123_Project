@@ -5,5 +5,11 @@
         var calculateButton = document.getElementById('calculateBMI');
         var bmiResultInput = document.getElementById('bmiResult');
 
+        // Add a click event listener to the BMI button
+        calculateButton.addEventListener('click', function () {
+            // Get the height and weight values from the input fields
+            var height = parseFloat(heightInput.value);
+            var weight = parseFloat(weightInput.value);
+        });
     });
 
