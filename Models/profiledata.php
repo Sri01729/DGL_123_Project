@@ -51,14 +51,14 @@ $profileUpdated = $query->execute();
 
 
 if ($profileUpdated ) {
-    echo "<b>Profile updated successfully!</b>";
+    echo "<h2>Profile updated successfully!</h2>";
     echo "<br><br>Please wait for few seconds to redirect you to next page.";
     echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
     echo '<script>redirectToPage("../views/progresstracking.view.php", 3000);</script>';
 } else {
-    echo "Error updating profile or name.";
+    echo "<h2>Error updating profile or name.<h2>";
 }
 
 } else{
-    echo "User email not found";
+    echo "<h2>User email not found<h2>";
 }
