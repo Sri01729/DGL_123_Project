@@ -30,8 +30,12 @@ $insertUser->execute(array(
     ':password' => $password
 ));
 
-// Redirect to the profile page after successful signup
-header('Location: ../Controllers/index.php');
+        // Redirect to the profile page after successful signup
+        echo "<b>Your registration is successful</b>";
+        echo "<br><br>Please wait for few seconds to redirect you to login page.";
+        echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
+        echo '<script>redirectToPage("../views/index.view.php", 3000);</script>';
+
 exit();
 }
 }

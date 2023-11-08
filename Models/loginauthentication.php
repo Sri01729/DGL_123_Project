@@ -44,8 +44,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Insert the email into the progress tracking table
             $insertQueryProgress = $pdo->prepare("INSERT INTO progresstracking (email) VALUES (?)");
             $insertQueryProgress->execute([$email]);
-
-            header('Location: ../Controllers/profile.php');
+                echo "<b>Your Login is successful</b>";
+                echo "<br><br>Please wait for few seconds to redirect you to Profile page.";
+                echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
+                echo '<script>redirectToPage("../views/profile.view.php", 3000);</script>';
             exit();
             }
         } else{
