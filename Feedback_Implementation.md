@@ -2,7 +2,7 @@
 
 ## Overview
 
-The purpose of this plan is to address specific user feedback received for the app. The identified feedback includes suggestions for improving the user experience during data entry and enhancing the profile page layout. This plan outlines the techniques required, a realistic schedule, and a roadmap for implementing the suggested changes.
+The purpose of this plan is to address specific user feedback received for the app. The identified feedback includes suggestions for improving the user experience during data entry and enhancing the profile page layout. This plan outlines the techniques required, a realistic schedule.
 
 ## Feedback Summary
 
@@ -37,4 +37,4 @@ The purpose of this plan is to address specific user feedback received for the a
 
 ## Conclusion
 
-This plan outlines the steps and timeline for addressing user feedback regarding post request feedback display, clear data entry instructions, and profile page layout. Effective collaboration between the frontend developer and the design team is crucial for the successful implementation of these improvements. The schedule and roadmap are subject to adjustments based on real-time feedback and unforeseen challenges during the development process.
+This plan outlines the steps and timeline for addressing user feedback regarding post request feedback display, clear data entry instructions, and profile page layout.
