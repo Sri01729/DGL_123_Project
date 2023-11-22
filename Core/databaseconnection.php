@@ -1,7 +1,7 @@
 <?php
 $type     = 'mysql';                 // Type of database
 $server   = '127.0.0.1';             // Server the database is on
-$db       = 'login';                 // Name of the database
+$db       = 'loginm3';                 // Name of the database
 $port     = '3306';                  // Port is 3306 in XAMPP
 $charset  = 'utf8mb4';               // UTF-8 encoding using 4 bytes of data per character
 $username = 'testuser';              // Enter YOUR username here
