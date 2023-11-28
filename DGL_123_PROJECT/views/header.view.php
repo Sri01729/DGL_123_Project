@@ -1,3 +1,7 @@
+<?php
+//configuration variable
+$proj_root = "/DGL_123_PROJECT/";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
