@@ -47,7 +47,7 @@
                 </form>
             </div>
             <div class="chart">
-                <img src="../DGL_123_PROJECT/assets/images/bodymeasgraph.png">
+                <img src="/DGL_123_PROJECT/assets/images/bodymeasgraph.png">
             </div>
         </div>
 </div>
