@@ -34,7 +34,7 @@ $insertUser->execute(array(
         echo "<h2>Your registration is successful</h2>";
         echo "<br><br>Please wait for few seconds to redirect you to login page.";
         echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
-        echo '<script>redirectToPage("../views/index.view.php", 3000);</script>';
+        echo '<script>redirectToPage("../index.php", 3000);</script>';
 
 exit();
 }

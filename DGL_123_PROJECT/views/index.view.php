@@ -4,7 +4,7 @@ $proj_root = "/DGL_123_PROJECT/";
 ?>
 <main>
     <div class="wrapper">
-        <form action="/Models/loginauthentication.php" method="POST">
+        <form action="/DGL_123_PROJECT/Models/loginauthentication.php" method="POST">
             <img src="/DGL_123_PROJECT/assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="email" placeholder="email" name="email" required>

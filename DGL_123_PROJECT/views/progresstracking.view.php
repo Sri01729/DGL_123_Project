@@ -6,7 +6,7 @@
         <div class="container">
 
             <div class="flex-container">
-                <form action="../DGL_123_PROJECT/Models/progresstracking.php" method="post">
+                <form action="/DGL_123_PROJECT/Models/progresstracking.php" method="post">
                     <div class="grid">
                         <div class="cell1">
                             <p>Body Measurements (in cms)</p>

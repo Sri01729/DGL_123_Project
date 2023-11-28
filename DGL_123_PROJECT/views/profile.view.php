@@ -1,9 +1,12 @@
-
+<?php
+//configuration variable
+$proj_root = "/DGL_123_PROJECT/";
+?>
 
 <div class="profile">
     <main>
         <h1>Set up profile</h1>
-        <form action="../DGL_123_PROJECT/Models/profiledata.php" method="post">
+        <form action="/DGL_123_PROJECT/Models/profiledata.php" method="post">
             <div class="form-group">
                 <label class="radio-label">Gender:</label>
                 <div class="radio-group">
@@ -41,4 +44,3 @@
         </form>
     </main>
     <script src="redirect.js"></script>
-

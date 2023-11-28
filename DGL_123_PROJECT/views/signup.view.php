@@ -2,7 +2,7 @@
 
 <main>
     <div class="wrapper">
-        <form action="../DGL_123_PROJECT/Models/signupregistration.php" method="POST">
+        <form action="/DGL_123_PROJECT/Models/signupregistration.php" method="POST">
             <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="text" placeholder="Name" name="name" required>

@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo "<h2>Your Login is successful</h2>";
                 echo "<br><br>Please wait for few seconds to redirect you to Profile page.";
                 echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
-                echo '<script>redirectToPage("../views/profile.view.php", 3000);</script>';
+                echo '<script>redirectToPage("../Controllers/profile.php", 3000);</script>';
             exit();
             }
         } else{
