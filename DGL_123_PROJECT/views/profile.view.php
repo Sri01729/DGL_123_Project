@@ -1,4 +1,4 @@
-<?php include 'header.view.php'; ?>
+
 
 <div class="profile">
     <main>
@@ -42,4 +42,3 @@
     </main>
     <script src="redirect.js"></script>
 
-    <?php include 'footer.view.php'; ?>

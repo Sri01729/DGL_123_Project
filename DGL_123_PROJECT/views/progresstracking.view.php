@@ -1,4 +1,4 @@
-<?php include 'header.view.php'; ?>
+
 
 <div class="progress">
     <main>
@@ -57,4 +57,3 @@
 </div>
 </main>
 
-<?php include 'footer.view.php'; ?>

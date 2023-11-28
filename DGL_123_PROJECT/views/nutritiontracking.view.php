@@ -1,4 +1,4 @@
-<?php include 'header.view.php'; ?>
+
 
 <div class="progress">
     <main>
@@ -113,4 +113,3 @@
         <button class="submit-button" onclick="calculateMacroNutrition()" style=" margin: 0px 0px 80px 650px; ">Submit</button>
     </main>
 
-    <?php include 'footer.view.php'; ?>

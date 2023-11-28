@@ -1,4 +1,4 @@
-<?php include 'header.view.php'; ?>
+
 
 <main>
     <div class="wrapper">
@@ -25,4 +25,3 @@
     </div>
 </main>
 
-<?php include 'footer.view.php'; ?>
