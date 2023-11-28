@@ -1,12 +1,15 @@
-
-
+<?php
+//configuration variable
+$proj_root = "/DGL_123_PROJECT/";
+$actionPath = $proj_root . "Models/profiledata.php";
+?>
 <div class="progress">
     <main>
         <h1 class="progressh1">Progress Tracking</h1>
         <div class="container">
 
             <div class="flex-container">
-                <form action="/DGL_123_PROJECT/Models/progresstracking.php" method="post">
+                <form action="<?php echo $actionPath; ?>" method="post">
                     <div class="grid">
                         <div class="cell1">
                             <p>Body Measurements (in cms)</p>
@@ -56,4 +59,3 @@
     <input class="totalmeassub" type="text" id="totalMeas" name="totalMeasurements">
 </div>
 </main>
-
