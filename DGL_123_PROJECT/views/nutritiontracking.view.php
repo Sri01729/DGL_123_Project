@@ -1,5 +1,8 @@
-
-
+<?php
+//configuration variable
+$proj_root = "/DGL_123_PROJECT/";
+$imagePath = $proj_root . "assets/images/piechart.png";
+?>
 <div class="progress">
     <main>
         <h1 style="text-align: center; color: #f99c1a; margin-bottom: 40px;">Nutrition Tracking</h1>
@@ -26,7 +29,7 @@
                                 <option value="">Select the food item</option>
                                 <?php
                                 // Include the PHP file to access the $food array
-                                include '../DGL_123_PROJECT/Models/nutritiondata.php';
+                                include '../Models/nutritiondata.php';
 
                                 // Loop through $food and populate the dropdown
                                 foreach ($food as $foodItem) {
@@ -47,7 +50,7 @@
                                 <option value="">Select the food item</option>
                                 <?php
                                 // Include the PHP file to access the $food array
-                                include '../DGL_123_PROJECT/Models/nutritiondata.php';
+                                include '../Models/nutritiondata.php';
 
                                 // Loop through $food and populate the dropdown
                                 foreach ($food as $foodItem) {
@@ -68,7 +71,7 @@
                                 <option value="">Select the food item</option>
                                 <?php
                                 // Include the PHP file to access the $food array
-                                include '../DGL_123_PROJECT/Models/nutritiondata.php';
+                                include '../Models/nutritiondata.php';
 
                                 // Loop through $food and populate the dropdown
                                 foreach ($food as $foodItem) {
@@ -104,7 +107,7 @@
                         </div>
                     </div>
                     <div class="macro-chart">
-                        <img src="../assets/images/piechart.png">
+                        <img src="<?= $imagePath ?>">
                     </div>
                 </div>
             </div>
@@ -112,4 +115,3 @@
         <div style="margin-top: 100px ;"></div>
         <button class="submit-button" onclick="calculateMacroNutrition()" style=" margin: 0px 0px 80px 650px; ">Submit</button>
     </main>
-
