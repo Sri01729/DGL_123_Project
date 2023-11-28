@@ -3,7 +3,7 @@
 <main>
     <div class="wrapper">
         <form action="../Models/loginauthentication.php" method="POST">
-            <img src="../assets/images/SAIKYO.png">
+            <img src="../DGL_123_PROJECT/assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="email" placeholder="email" name="email" required>
                 <i class="bx bxs-user"></i>
@@ -19,7 +19,7 @@
             <button type="submit" class="btn">Login</button>
             <div class="register">
                 <p>Don't have an account ? </p>
-                <a href="../Controllers/signup.php"> Register</a>
+                <a href="../DGL_123_PROJECT/Controllers/signup.php"> Register</a>
             </div>
         </form>
     </div>

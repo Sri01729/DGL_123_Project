@@ -26,7 +26,7 @@
                                 <option value="">Select the food item</option>
                                 <?php
                                 // Include the PHP file to access the $food array
-                                include '../Models/nutritiondata.php';
+                                include '../DGL_123_PROJECT/Models/nutritiondata.php';
 
                                 // Loop through $food and populate the dropdown
                                 foreach ($food as $foodItem) {
@@ -47,7 +47,7 @@
                                 <option value="">Select the food item</option>
                                 <?php
                                 // Include the PHP file to access the $food array
-                                include '../Models/nutritiondata.php';
+                                include '../DGL_123_PROJECT/Models/nutritiondata.php';
 
                                 // Loop through $food and populate the dropdown
                                 foreach ($food as $foodItem) {
@@ -68,7 +68,7 @@
                                 <option value="">Select the food item</option>
                                 <?php
                                 // Include the PHP file to access the $food array
-                                include '../Models/nutritiondata.php';
+                                include '../DGL_123_PROJECT/Models/nutritiondata.php';
 
                                 // Loop through $food and populate the dropdown
                                 foreach ($food as $foodItem) {

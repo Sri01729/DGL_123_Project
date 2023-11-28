@@ -6,7 +6,7 @@
         <div class="container">
 
             <div class="flex-container">
-                <form action="../Models/progresstracking.php" method="post">
+                <form action="../DGL_123_PROJECT/Models/progresstracking.php" method="post">
                     <div class="grid">
                         <div class="cell1">
                             <p>Body Measurements (in cms)</p>
@@ -47,7 +47,7 @@
                 </form>
             </div>
             <div class="chart">
-                <img src="../assets/images/bodymeasgraph.png">
+                <img src="../DGL_123_PROJECT/assets/images/bodymeasgraph.png">
             </div>
         </div>
 </div>

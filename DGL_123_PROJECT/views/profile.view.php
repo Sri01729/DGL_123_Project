@@ -3,7 +3,7 @@
 <div class="profile">
     <main>
         <h1>Set up profile</h1>
-        <form action="../Models/profiledata.php" method="post">
+        <form action="../DGL_123_PROJECT/Models/profiledata.php" method="post">
             <div class="form-group">
                 <label class="radio-label">Gender:</label>
                 <div class="radio-group">
@@ -32,7 +32,7 @@
                     <label>Body Fat Percentage:</label>
                     <input type="number" name="bodyfat">
                 </div>
-                <div class="form-group" id = "bmiButton">
+                <div class="form-group" id="bmiButton">
                     <button type="button" id="calculateBMI" class="bmibutton">Calculate BMI</button>
                     <input type="number" name="bmi" id="bmiResult" readonly>
                 </div>
