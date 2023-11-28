@@ -28,12 +28,15 @@ $userEmail = $_SESSION['user_email'];
     //might not be as straightforward because these functions are typically used within functions or methods
     // to inspect the call stack.
 
-    echo '<pre>';
-    print_r($userEmail);
-    echo '</pre>';
+    //echo '<pre>';
+    //print_r($userEmail);
+    //echo '</pre>';
     //Result
     //salahari@northislandcollege.ca
     //array(0) { }
+
+    //Log the variable result in debug.log file
+    error_log($userEmail, 3, 'debug.log');
 
 //Update name in profile table based on the email in users table using subquery
 $queryNameUpdate = $pdo->prepare("UPDATE profile
