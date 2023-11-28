@@ -1,8 +1,12 @@
-
+<?php
+//configuration variable
+$proj_root = "/DGL_123_PROJECT/";
+$actionPath = $proj_root . "Models/signupregistration.php";
+?>
 
 <main>
     <div class="wrapper">
-        <form action="/DGL_123_PROJECT/Models/signupregistration.php" method="POST">
+        <form action="<?php echo $actionPath; ?>" method="POST">
             <img src="../assets/images/SAIKYO.png">
             <div class="input-box">
                 <input type="text" placeholder="Name" name="name" required>
@@ -24,4 +28,3 @@
         </form>
     </div>
 </main>
-
