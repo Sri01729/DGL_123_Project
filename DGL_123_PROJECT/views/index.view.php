@@ -1,5 +1,7 @@
-
-
+<?php
+//configuration variable
+$proj_root = "/DGL_123_PROJECT/";
+?>
 <main>
     <div class="wrapper">
         <form action="/Models/loginauthentication.php" method="POST">
@@ -19,9 +21,8 @@
             <button type="submit" class="btn">Login</button>
             <div class="register">
                 <p>Don't have an account ? </p>
-                <a href="/DGL_123_PROJECT/Controllers/signup.php"> Register</a>
+                <a href="<?php echo $proj_root; ?>Controllers/signup.php"> Register</a>
             </div>
         </form>
     </div>
 </main>
-
