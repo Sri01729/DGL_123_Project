@@ -1,4 +1,6 @@
 <?php
+require_once '../config.php';
+
 //configuration variable
 $navigation_path = "Controllers/";
 $total_path= $proj_root . $navigation_path;
