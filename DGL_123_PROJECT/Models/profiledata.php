@@ -36,8 +36,10 @@ $userEmail = $_SESSION['user_email'];
     //array(0) { }
 
     //Log the variable result in debug.log file
-    error_log($userEmail, 3, 'debug.log');
+    //error_log($userEmail, 3, 'debug.log');
 
+    // Add manual breakpoint to know the $user_Email variable content
+    die();
 //Update name in profile table based on the email in users table using subquery
 $queryNameUpdate = $pdo->prepare("UPDATE profile
         JOIN users ON profile.email = users.email
