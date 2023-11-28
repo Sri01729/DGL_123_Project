@@ -18,9 +18,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if (isset($_SESSION['user_email'])) {
 $userEmail = $_SESSION['user_email'];
 
-var_dump($userEmail);
-//Result for the variable dump
-//string(30) "salahari@northislandcollege.ca"
+    //Dump the Variables section
+    //var_dump($userEmail);
+    //Result for the variable dump
+    //string(30) "salahari@northislandcollege.ca"
+
+    //Stack Trace section
+    //Since my PHP files doesn't have classes and functions, using debug_backtrace() and debug_print_backtrace()
+    //might not be as straightforward because these functions are typically used within functions or methods
+    // to inspect the call stack.
+
+    echo '<pre>';
+    print_r($userEmail);
+    echo '</pre>';
+    //Result
+    //salahari@northislandcollege.ca
+    //array(0) { }
 
 //Update name in profile table based on the email in users table using subquery
 $queryNameUpdate = $pdo->prepare("UPDATE profile
@@ -54,6 +67,8 @@ $profileUpdated = $query->execute();
 
 
 if ($profileUpdated ) {
+        var_dump(debug_backtrace());
+        debug_print_backtrace();
     echo "<h2>Profile updated successfully!</h2>";
     echo "<br><br>Please wait for few seconds to redirect you to next page.";
     echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
