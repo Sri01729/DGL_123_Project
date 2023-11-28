@@ -18,6 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if (isset($_SESSION['user_email'])) {
 $userEmail = $_SESSION['user_email'];
 
+var_dump($userEmail);
+//Result for the variable dump
+//string(30) "salahari@northislandcollege.ca"
 
 //Update name in profile table based on the email in users table using subquery
 $queryNameUpdate = $pdo->prepare("UPDATE profile
