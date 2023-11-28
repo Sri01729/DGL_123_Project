@@ -1,5 +1,19 @@
 <?php
-require_once '../config.php';
+// Get the current page file name
+$currentFile = basename($_SERVER['PHP_SELF']);
+
+// Set the default path
+$configPath = 'config.php';
+
+// Conditionally update the path if the current page is index.php
+if ($currentFile === 'index.php') {
+    $configPath = 'config.php';
+} else {
+    $configPath = '../config.php';
+}
+
+// Require the configuration file
+require_once $configPath;
 
 //configuration variable
 $navigation_path = "Controllers/";
