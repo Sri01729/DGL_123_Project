@@ -1,6 +1,8 @@
 <?php
 //configuration variable
 $proj_root = "/DGL_123_PROJECT/";
+$navigation_path = "Controllers/";
+$total_path= $proj_root . $navigation_path;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,9 +21,9 @@ $proj_root = "/DGL_123_PROJECT/";
     <header>
         <h2 class="logo">SAIKYO</h2>
         <nav class="navigation">
-            <a href="<?php echo $proj_root; ?>Controllers/profile.php">Home</a>
-            <a href="<?php echo $proj_root; ?>Controllers/progresstracking.php">Progress Tracking</a>
-            <a href="<?php echo $proj_root; ?>Controllers/nutritiontracking.php">Nutrition Tracking</a>
+            <a href="<?php echo $total_path; ?>profile.php">Home</a>
+            <a href="<?php echo $total_path; ?>progresstracking.php">Progress Tracking</a>
+            <a href="<?php echo $total_path; ?>nutritiontracking.php">Nutrition Tracking</a>
             <a href="#">About us</a>
             <a href="#">Contact us</a>
             <a href="<?php echo $proj_root; ?>index.php"><button class="btnLogin-popup">Login</button></a>
