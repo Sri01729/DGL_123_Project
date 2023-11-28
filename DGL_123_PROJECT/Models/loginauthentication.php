@@ -52,6 +52,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         } else{
             echo "<h2>Invalid email or passsword<h2>";
+
+            //Add a custom error log
+            $errorMsg = "Invalid email or passsword";
+            error_log($errorMsg, 3, "error.log");
         }
     }else{
         echo "<h2>Invalid email or passsword<h2>";
