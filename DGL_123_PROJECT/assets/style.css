@@ -572,3 +572,46 @@ td {
   margin-left: 657px;
   margin-top: 10px;
 }
+.card {
+  margin: auto;
+  background-color: #2c2b2b;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  padding: 10px;
+  background-color: #2c2b2b;
+  border-top: 1px solid #ccc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.bmibutton {
+  background-color: #f99c1a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #f99c1a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
