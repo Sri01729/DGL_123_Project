@@ -1,6 +1,6 @@
 <?php
 require_once '../config.php';
-$actionPath = $proj_root . "Models/profiledata.php";
+$actionPath = $proj_root . "Models/progresstracking.php";
 ?>
 <div class="progress">
     <main>

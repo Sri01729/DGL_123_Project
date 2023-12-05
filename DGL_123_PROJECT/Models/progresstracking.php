@@ -58,10 +58,10 @@ if (isset($_SESSION['user_email'])) {
     $progressTrackingUpdated = $query->execute();
 
     if ($progressTrackingUpdated) {
-        echo "<b>Your progress have been saved</b>";
-        echo "<br><br>Please wait for few seconds to redirect you to next page.";
-        echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
-        echo '<script>redirectToPage("../Controllers/nutritiontracking.php", 3000);</script>';
+        echo '<script type="text/javascript">';
+        echo 'alert("Progress updated succesfully, Click OK to go to next page.");';
+        echo 'window.location.href = "../Controllers/nutritiontracking.php";';
+        echo '</script>';
     } else {
         echo "Error updating progress or name.";
     }

@@ -1,11 +1,11 @@
 <?php
 require_once '../config.php';
+$actionPath = $proj_root . "Models/profiledata.php";
 ?>
-
 <div class="profile">
     <main>
         <h1>Set up profile</h1>
-        <form action="<?php echo $proj_root; ?>Models/profiledata.php" method="post">
+        <form action="<?php echo $actionPath ?>" method="post">
             <div class="form-group">
                 <label class="radio-label">Gender:</label>
                 <div class="radio-group">
