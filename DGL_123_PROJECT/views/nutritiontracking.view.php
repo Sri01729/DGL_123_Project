@@ -4,7 +4,14 @@ $imagePath = $proj_root . "assets/images/piechart.png";
 ?>
 <div class="progress">
     <main>
-        <h1 style="text-align: center; color: #f99c1a; margin-bottom: 40px;">Nutrition Tracking</h1>
+        <h1 style="text-align: center; color: #f99c1a; margin-bottom: 10px;">Nutrition Tracking</h1>
+        <div class="tooltip">
+            <div class="tooltip_message">
+                <p> About progress tracking</p>
+            </div>
+            <span class="tooltiptext">
+                Here, you have the capability to determine the macronutrient content present in your meals. (FYI: Have to enter all three foods).</span>
+        </div>
         <div class="nutrition-form">
             <div class="meal-dropdown">
                 <label for="meal">Meal:</label>
@@ -39,7 +46,7 @@ $imagePath = $proj_root . "assets/images/piechart.png";
                         </td>
                         <td>
                             <label for="quantity1">Quantity(In gms):</label>
-                            <input type="number" id="quantity1" placeholder="0">
+                            <input type="number" id="quantity1" placeholder="0" required>
                         </td>
                     </tr>
                     <tr>
@@ -60,7 +67,7 @@ $imagePath = $proj_root . "assets/images/piechart.png";
                         </td>
                         <td>
                             <label for="quantity2">Quantity(In gms):</label>
-                            <input type="number" id="quantity2" placeholder="0">
+                            <input type="number" id="quantity2" placeholder="0" required>
                         </td>
                     </tr>
                     <tr>
@@ -81,7 +88,7 @@ $imagePath = $proj_root . "assets/images/piechart.png";
                         </td>
                         <td>
                             <label for="quantity3">Quantity(In gms):</label>
-                            <input type="number" id="quantity3" placeholder="0">
+                            <input type="number" id="quantity3" placeholder="0" required>
                         </td>
                     </tr>
                 </table>
