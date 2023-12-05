@@ -360,7 +360,7 @@ input[type="radio"] {
 /* Styling for the "progress" heading */
 .progress h1 {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 5px;
   margin-top: 120px;
 }
 
@@ -546,10 +546,11 @@ td {
 .tooltip {
   position: relative;
   display: inline-block;
+  text-decoration: underline;
 }
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 500px;
   background-color: black;
   color: #fff;
   text-align: center;

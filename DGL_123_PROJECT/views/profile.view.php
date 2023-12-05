@@ -7,10 +7,10 @@ $actionPath = $proj_root . "Models/profiledata.php";
         <h1>Set up profile</h1>
         <div class="tooltip">
             <div class="tooltip_message">
-          <p> About profile page</p></div>
+                <p> About profile page</p>
+            </div>
             <span class="tooltiptext">
-                Your profile is the hub for saving your body data for fitness journey.
-                Here, you can update personal details whenever you want.</span>
+                Your profile serves as the central hub for storing essential body data throughout your fitness journey. This is where you can conveniently update your personal details at any time.</span>
         </div>
         <form action="<?php echo $actionPath ?>" method="post">
             <div class="form-group">
