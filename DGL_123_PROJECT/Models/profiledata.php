@@ -39,7 +39,7 @@ $userEmail = $_SESSION['user_email'];
     //error_log($userEmail, 3, 'debug.log');
 
     // Add manual breakpoint to know the $user_Email variable content
-    die();
+    //die();
 //Update name in profile table based on the email in users table using subquery
 $queryNameUpdate = $pdo->prepare("UPDATE profile
         JOIN users ON profile.email = users.email
@@ -72,12 +72,12 @@ $profileUpdated = $query->execute();
 
 
 if ($profileUpdated ) {
-        var_dump(debug_backtrace());
-        debug_print_backtrace();
-    echo "<h2>Profile updated successfully!</h2>";
-    echo "<br><br>Please wait for few seconds to redirect you to next page.";
-    echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
-    echo '<script>redirectToPage("../Controllers/progresstracking.php", 3000);</script>';
+        //var_dump(debug_backtrace());
+        //debug_print_backtrace();
+        echo '<script type="text/javascript">';
+        echo 'alert("Profile updated succesfully, Click OK to go to next page.");';
+        echo 'window.location.href = "../Controllers/progresstracking.php";';
+        echo '</script>';
 } else {
     echo "<h2>Error updating profile or name.<h2>";
 }
