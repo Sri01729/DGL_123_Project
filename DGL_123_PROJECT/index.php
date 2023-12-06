@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 
 
 // Include the header
-include 'Views/header.view.php';
+include 'Views/headersudo.view.php';
 
 // Load the main page content
 include 'Views/index.view.php';

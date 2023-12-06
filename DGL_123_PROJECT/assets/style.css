@@ -615,3 +615,8 @@ td {
   border: none;
   cursor: pointer;
 }
+
+.sudoheader {
+  display: flex;
+  justify-content: center;
+}

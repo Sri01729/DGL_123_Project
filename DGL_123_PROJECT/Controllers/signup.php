@@ -1,6 +1,6 @@
 <?php
 // Include the header
-include '../views/header.view.php';
+include '../views/headersudo.view.php';
 
 // Load the signup page content
 include '../views/signup.view.php';

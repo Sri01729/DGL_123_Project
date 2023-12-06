@@ -2,7 +2,6 @@
 require_once '../config.php';
 $actionPath = $proj_root . "Models/signupregistration.php";
 ?>
-
 <main>
     <div class="wrapper">
         <form action="<?php echo $actionPath; ?>" method="POST">
@@ -22,7 +21,7 @@ $actionPath = $proj_root . "Models/signupregistration.php";
             <button type="submit" class="btn" value="Signup">Signup</button>
             <div class="register">
                 <p>Have an account ? </p>
-                <a href="../DGL_123_PROJECT/Controllers/index.php">Login now</a>
+                <a href="../index.php">Login now</a>
             </div>
         </form>
     </div>
