@@ -44,10 +44,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Insert the email into the progress tracking table
             $insertQueryProgress = $pdo->prepare("INSERT INTO progresstracking (email) VALUES (?)");
             $insertQueryProgress->execute([$email]);
-                echo "<h2>Your Login is successful</h2>";
-                echo "<br><br>Please wait for few seconds to redirect you to Profile page.";
-                echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
-                echo '<script>redirectToPage("../Controllers/profile.php", 3000);</script>';
+                echo '<script type="text/javascript">';
+                echo 'alert("Login is Succesful, Click OK to go to next page.");';
+                echo 'window.location.href = "../Controllers/profile.php";';
+                echo '</script>';
+
+
             exit();
             }
         } else{
@@ -58,7 +60,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //error_log($errorMsg, 3, "error.log");
         }
     }else{
-        echo "<h2>Invalid email or passsword<h2>";
+        echo '<script type="text/javascript">';
+        echo 'alert("Invalid email address or password, Click OK to try again.");';
+        echo 'window.location.href = "../index.php";';
+        echo '</script>';
     }
 
 

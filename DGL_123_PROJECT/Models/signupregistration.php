@@ -19,8 +19,10 @@ $checkQuery->execute([$email]);
 $existingEmail = $checkQuery->fetchColumn();
 
 if ($existingEmail) {
-
-    echo " email already exists please choose a different email";
+        echo '<script type="text/javascript">';
+        echo 'alert("Email already exists please choose a different email.");';
+        echo 'window.location.href = "../Controllers/signup.php";';
+        echo '</script>';
 } else {
 // Insert the user's data into the database
 $insertUser = $pdo->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)');
@@ -31,10 +33,10 @@ $insertUser->execute(array(
 ));
 
         // Redirect to the profile page after successful signup
-        echo "<h2>Your registration is successful</h2>";
-        echo "<br><br>Please wait for few seconds to redirect you to login page.";
-        echo '<script type="text/javascript" src="../assets/redirect.js"></script>';
-        echo '<script>redirectToPage("../index.php", 3000);</script>';
+        echo '<script type="text/javascript">';
+        echo 'alert("Registration Succesful, Click OK to go to login page.");';
+        echo 'window.location.href = "../index.php";';
+        echo '</script>';
 
 exit();
 }
