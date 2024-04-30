@@ -1,4 +1,3 @@
-# DGL_123_Project
  
 # Saikyo Project
 
